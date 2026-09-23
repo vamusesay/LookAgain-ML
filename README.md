@@ -91,8 +91,7 @@ reproduction uses the supplied source and replication scripts.
 
 Start with the [TensorFlow Flowers Tutorial](workflow_demo/tensorflow_flowers/README.md).
 It is the current-API public demonstration and requires no restricted dataset.
-Its saved reference outputs describe the procedure used in the submitted paper. Historical
-wheel-run references are not interchangeable with them.
+Its saved reference outputs describe the procedure used in the submitted paper.
 
 | Directory | Contents |
 |---|---|
