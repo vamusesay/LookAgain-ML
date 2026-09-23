@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Locked-test Flowers performance after training-only tuning. Selection uses outer-validation log loss.}
+\label{tab:flowers-performance}
+\begin{tabular}{lrrrr}
+\toprule
+Representation & Accuracy & Balanced acc. & Macro F1 & Log loss\\
+\midrule
+ResNet50 & 0.8909 & 0.8907 & 0.8897 & 0.3658\\
+VGG16 & 0.8855 & 0.8866 & 0.8860 & 0.3421\\
+InceptionV3 & 0.8782 & 0.8761 & 0.8768 & 0.3428\\
+MobileNetV2 & 0.9091 & 0.9097 & 0.9085 & 0.3197\\
+COCO semantic & 0.3127 & 0.2986 & 0.2649 & 1.5285\\
+ADE20K semantic & 0.4200 & 0.4001 & 0.3915 & 1.5292\\
+DINOv2-B/14 & 0.9818 & 0.9821 & 0.9815 & 0.0658\\
+SigLIP 2-B/16 & 0.9836 & 0.9838 & 0.9828 & 0.0597\\
+ConvNeXt-B & 0.9382 & 0.9381 & 0.9373 & 0.2236\\
+ViT-B/16 & 0.9364 & 0.9372 & 0.9360 & 0.2068\\
+\bottomrule
+\end{tabular}
+\end{table}

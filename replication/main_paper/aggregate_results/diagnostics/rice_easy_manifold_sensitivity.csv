@@ -1,0 +1,4 @@
+threshold,test_n,flagged,flagged_share,same_target_among_flagged,dino_accuracy_after_exclusion,one_nn_accuracy
+0.99,759,281,0.3702239789196311,1.0,1.0,1.0
+0.995,759,139,0.1831357048748353,1.0,1.0,1.0
+0.999,759,77,0.10144927536231885,1.0,1.0,1.0

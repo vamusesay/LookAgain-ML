@@ -1,0 +1,484 @@
+{
+  "toronto_houses": {
+    "method": "paired grouped bootstrap on locked-test predictions",
+    "repetitions": 2000,
+    "resampling_unit": "effective leakage-safe group",
+    "group_count": 1084,
+    "same_sample_for_all_methods": true,
+    "conditioning_statement": "Intervals condition on the fitted models and locked split; they do not include retraining, repartitioning, or encoder-pretraining uncertainty.",
+    "model_intervals": {
+      "siglip2_b16": {
+        "r2": {
+          "mean": 0.6289163246120718,
+          "lower_95": 0.5750783108621624,
+          "upper_95": 0.6748823544160899,
+          "positive_share": 1.0,
+          "point_estimate": 0.6286643004442358
+        },
+        "mse": {
+          "mean": 0.08346865712684158,
+          "lower_95": 0.07314746437060506,
+          "upper_95": 0.09604385961997604,
+          "positive_share": 1.0,
+          "point_estimate": 0.08356343130026793
+        },
+        "mae": {
+          "mean": 0.21978753055867278,
+          "lower_95": 0.20781808703882237,
+          "upper_95": 0.23290878998045894,
+          "positive_share": 1.0,
+          "point_estimate": 0.21996348625455434
+        },
+        "correlation": {
+          "mean": 0.7949683780590282,
+          "lower_95": 0.7632832232015024,
+          "upper_95": 0.8222248619162026,
+          "positive_share": 1.0,
+          "point_estimate": 0.7944290351521504
+        }
+      },
+      "linear_stack": {
+        "r2": {
+          "mean": 0.6584024020980377,
+          "lower_95": 0.6039531513111785,
+          "upper_95": 0.7031439772719914,
+          "positive_share": 1.0,
+          "point_estimate": 0.6581555778560357
+        },
+        "mse": {
+          "mean": 0.07683587462141472,
+          "lower_95": 0.06665699046864798,
+          "upper_95": 0.0894385389334842,
+          "positive_share": 1.0,
+          "point_estimate": 0.0769268694590383
+        },
+        "mae": {
+          "mean": 0.20980443156452866,
+          "lower_95": 0.19838683606279134,
+          "upper_95": 0.22254599459731528,
+          "positive_share": 1.0,
+          "point_estimate": 0.2099253794065681
+        },
+        "correlation": {
+          "mean": 0.81293498978043,
+          "lower_95": 0.7823080152276142,
+          "upper_95": 0.8390687241130604,
+          "positive_share": 1.0,
+          "point_estimate": 0.8124079412302184
+        }
+      }
+    },
+    "difference_intervals": {
+      "linear_stack_minus_siglip2_b16": {
+        "r2": {
+          "mean": 0.02948607748596599,
+          "lower_95": 0.01744046130224228,
+          "upper_95": 0.04159361756524141,
+          "positive_share": 1.0,
+          "point_estimate": 0.02949127741179991,
+          "higher_is_better": true
+        },
+        "mse": {
+          "mean": -0.006632782505426867,
+          "lower_95": -0.00928643240611709,
+          "upper_95": -0.003969308318453422,
+          "positive_share": 0.0,
+          "point_estimate": -0.006636561841229627,
+          "higher_is_better": false
+        },
+        "mae": {
+          "mean": -0.00998309899414413,
+          "lower_95": -0.014130027725723877,
+          "upper_95": -0.005847213347737997,
+          "positive_share": 0.0,
+          "point_estimate": -0.010038106847986228,
+          "higher_is_better": false
+        },
+        "correlation": {
+          "mean": 0.017966611721401727,
+          "lower_95": 0.010782044457480728,
+          "upper_95": 0.025362748557360103,
+          "positive_share": 1.0,
+          "point_estimate": 0.01797890607806807,
+          "higher_is_better": true
+        }
+      }
+    }
+  },
+  "obs_horses": {
+    "method": "paired grouped bootstrap on locked-test predictions",
+    "repetitions": 2000,
+    "resampling_unit": "effective leakage-safe group",
+    "group_count": 1418,
+    "same_sample_for_all_methods": true,
+    "conditioning_statement": "Intervals condition on the fitted models and locked split; they do not include retraining, repartitioning, or encoder-pretraining uncertainty.",
+    "model_intervals": {
+      "dinov2_vitb14": {
+        "r2": {
+          "mean": 0.10374502983095463,
+          "lower_95": 0.07069937397329012,
+          "upper_95": 0.13467865249901312,
+          "positive_share": 1.0,
+          "point_estimate": 0.10460782229228216
+        },
+        "mse": {
+          "mean": 0.8314830552491176,
+          "lower_95": 0.7669293606459506,
+          "upper_95": 0.896459572437676,
+          "positive_share": 1.0,
+          "point_estimate": 0.8321812034465235
+        },
+        "mae": {
+          "mean": 0.7176738239100785,
+          "lower_95": 0.6890451140223104,
+          "upper_95": 0.7454454702699985,
+          "positive_share": 1.0,
+          "point_estimate": 0.7182877121482767
+        },
+        "correlation": {
+          "mean": 0.3248432515175655,
+          "lower_95": 0.277305736123329,
+          "upper_95": 0.3688369329538002,
+          "positive_share": 1.0,
+          "point_estimate": 0.3251540727713532
+        }
+      },
+      "feature_concatenation": {
+        "r2": {
+          "mean": 0.11057252004894622,
+          "lower_95": 0.08258427695657597,
+          "upper_95": 0.1352376528068564,
+          "positive_share": 1.0,
+          "point_estimate": 0.11092645992870465
+        },
+        "mse": {
+          "mean": 0.8252058764348776,
+          "lower_95": 0.7607708738766062,
+          "upper_95": 0.8913392497747041,
+          "positive_share": 1.0,
+          "point_estimate": 0.8263086354217701
+        },
+        "mae": {
+          "mean": 0.7153014491983505,
+          "lower_95": 0.6864837400293279,
+          "upper_95": 0.7440767525254669,
+          "positive_share": 1.0,
+          "point_estimate": 0.7160483810167597
+        },
+        "correlation": {
+          "mean": 0.33557850349098545,
+          "lower_95": 0.29059638761352563,
+          "upper_95": 0.3758531888702509,
+          "positive_share": 1.0,
+          "point_estimate": 0.3349543516289438
+        }
+      }
+    },
+    "difference_intervals": {
+      "feature_concatenation_minus_dinov2_vitb14": {
+        "r2": {
+          "mean": 0.006827490217991606,
+          "lower_95": -0.016924804067501305,
+          "upper_95": 0.03146732678219023,
+          "positive_share": 0.7065,
+          "point_estimate": 0.006318637636422486,
+          "higher_is_better": true
+        },
+        "mse": {
+          "mean": -0.00627717881424002,
+          "lower_95": -0.029123711432155135,
+          "upper_95": 0.01533495994195136,
+          "positive_share": 0.2935,
+          "point_estimate": -0.005872568024753333,
+          "higher_is_better": false
+        },
+        "mae": {
+          "mean": -0.002372374711728063,
+          "lower_95": -0.01392106822765852,
+          "upper_95": 0.009529921532030668,
+          "positive_share": 0.3385,
+          "point_estimate": -0.002239331131516975,
+          "higher_is_better": false
+        },
+        "correlation": {
+          "mean": 0.010735251973419927,
+          "lower_95": -0.02452737077536221,
+          "upper_95": 0.046733475751319094,
+          "positive_share": 0.72,
+          "point_estimate": 0.009800278857590605,
+          "higher_is_better": true
+        }
+      }
+    }
+  },
+  "breakhis": {
+    "method": "paired grouped bootstrap on locked-test predictions",
+    "repetitions": 2000,
+    "resampling_unit": "effective leakage-safe group",
+    "group_count": 12,
+    "same_sample_for_all_methods": true,
+    "conditioning_statement": "Intervals condition on the fitted models and locked split; they do not include retraining, repartitioning, or encoder-pretraining uncertainty.",
+    "model_intervals": {
+      "vgg16": {
+        "accuracy": {
+          "mean": 0.8845270040139501,
+          "lower_95": 0.8029526246830794,
+          "upper_95": 0.9709028275275364,
+          "positive_share": 1.0,
+          "point_estimate": 0.8777679362267493
+        },
+        "log_loss": {
+          "mean": 0.28267038023005386,
+          "lower_95": 0.14189066027202163,
+          "upper_95": 0.40925616017929983,
+          "positive_share": 1.0,
+          "point_estimate": 0.2930082384444123
+        }
+      },
+      "equal_average": {
+        "accuracy": {
+          "mean": 0.9363158833154511,
+          "lower_95": 0.8628441543643484,
+          "upper_95": 0.9902222569283629,
+          "positive_share": 1.0,
+          "point_estimate": 0.9309123117803366
+        },
+        "log_loss": {
+          "mean": 0.28292811285117064,
+          "lower_95": 0.19667258989860337,
+          "upper_95": 0.36572925945286106,
+          "positive_share": 1.0,
+          "point_estimate": 0.2895749748250429
+        }
+      }
+    },
+    "difference_intervals": {
+      "equal_average_minus_vgg16": {
+        "accuracy": {
+          "mean": 0.051788879301500994,
+          "lower_95": 0.015885597846199407,
+          "upper_95": 0.09969851596538092,
+          "positive_share": 1.0,
+          "point_estimate": 0.05314437555358731,
+          "higher_is_better": true
+        },
+        "log_loss": {
+          "mean": 0.0002577326211167358,
+          "lower_95": -0.06168689950495817,
+          "upper_95": 0.05851862159687544,
+          "positive_share": 0.5075,
+          "point_estimate": -0.003433263619369409,
+          "higher_is_better": false
+        }
+      }
+    }
+  },
+  "pneumonia": {
+    "method": "paired grouped bootstrap on locked-test predictions",
+    "repetitions": 2000,
+    "resampling_unit": "effective leakage-safe group",
+    "group_count": 456,
+    "same_sample_for_all_methods": true,
+    "conditioning_statement": "Intervals condition on the fitted models and locked split; they do not include retraining, repartitioning, or encoder-pretraining uncertainty.",
+    "model_intervals": {
+      "convnext_b": {
+        "accuracy": {
+          "mean": 0.9648848340599138,
+          "lower_95": 0.9525624238733251,
+          "upper_95": 0.9770459899872386,
+          "positive_share": 1.0,
+          "point_estimate": 0.9646924829157175
+        },
+        "log_loss": {
+          "mean": 0.08821068829129847,
+          "lower_95": 0.06834783724306806,
+          "upper_95": 0.10964990448471,
+          "positive_share": 1.0,
+          "point_estimate": 0.0886198417082811
+        }
+      },
+      "feature_concatenation": {
+        "accuracy": {
+          "mean": 0.979545014049303,
+          "lower_95": 0.9700598802395209,
+          "upper_95": 0.9879521367746698,
+          "positive_share": 1.0,
+          "point_estimate": 0.979498861047836
+        },
+        "log_loss": {
+          "mean": 0.06964984196664677,
+          "lower_95": 0.05246611740467422,
+          "upper_95": 0.08985309219586345,
+          "positive_share": 1.0,
+          "point_estimate": 0.06988671289210246
+        }
+      }
+    },
+    "difference_intervals": {
+      "feature_concatenation_minus_convnext_b": {
+        "accuracy": {
+          "mean": 0.014660179989389253,
+          "lower_95": 0.002244606000211369,
+          "upper_95": 0.02777932442464737,
+          "positive_share": 0.988,
+          "point_estimate": 0.014806378132118492,
+          "higher_is_better": true
+        },
+        "log_loss": {
+          "mean": -0.01856084632465171,
+          "lower_95": -0.03737593104708891,
+          "upper_95": -0.001213505639518122,
+          "positive_share": 0.0175,
+          "point_estimate": -0.01873312881617864,
+          "higher_is_better": false
+        }
+      }
+    }
+  },
+  "facial_age": {
+    "method": "paired grouped bootstrap on locked-test predictions",
+    "repetitions": 2000,
+    "resampling_unit": "effective leakage-safe group",
+    "group_count": 1455,
+    "same_sample_for_all_methods": true,
+    "conditioning_statement": "Intervals condition on the fitted models and locked split; they do not include retraining, repartitioning, or encoder-pretraining uncertainty.",
+    "model_intervals": {
+      "siglip2_b16": {
+        "mae": {
+          "mean": 4.783355651693506,
+          "lower_95": 4.5373023434311675,
+          "upper_95": 5.030936012938898,
+          "positive_share": 1.0,
+          "point_estimate": 4.786035031529857
+        },
+        "mse": {
+          "mean": 46.14460631492231,
+          "lower_95": 40.23086628249877,
+          "upper_95": 52.885045596795415,
+          "positive_share": 1.0,
+          "point_estimate": 46.236700510193145
+        },
+        "correlation": {
+          "mean": 0.9615250677779767,
+          "lower_95": 0.9557287891043695,
+          "upper_95": 0.9667300278322294,
+          "positive_share": 1.0,
+          "point_estimate": 0.9614992085851992
+        }
+      },
+      "linear_stack": {
+        "mae": {
+          "mean": 4.865044030592391,
+          "lower_95": 4.514497880265132,
+          "upper_95": 5.296416745394909,
+          "positive_share": 1.0,
+          "point_estimate": 4.86748781429475
+        },
+        "mse": {
+          "mean": 81.99284690231151,
+          "lower_95": 39.662925812395095,
+          "upper_95": 161.0842050664995,
+          "positive_share": 1.0,
+          "point_estimate": 81.9217470271578
+        },
+        "correlation": {
+          "mean": 0.9326241564919667,
+          "lower_95": 0.8702883646206043,
+          "upper_95": 0.9672395520376605,
+          "positive_share": 1.0,
+          "point_estimate": 0.9318685525759198
+        }
+      }
+    },
+    "difference_intervals": {
+      "linear_stack_minus_siglip2_b16": {
+        "mae": {
+          "mean": 0.08168837889888475,
+          "lower_95": -0.13906244892697853,
+          "upper_95": 0.4468797900799204,
+          "positive_share": 0.646,
+          "point_estimate": 0.08145278276489343,
+          "higher_is_better": false
+        },
+        "mse": {
+          "mean": 35.8482405873892,
+          "lower_95": -3.4240517722300288,
+          "upper_95": 112.59380823140651,
+          "positive_share": 0.645,
+          "point_estimate": 35.68504651696466,
+          "higher_is_better": false
+        },
+        "correlation": {
+          "mean": -0.02890091128601005,
+          "lower_95": -0.08918448685281764,
+          "upper_95": 0.002865530308610781,
+          "positive_share": 0.355,
+          "point_estimate": -0.029630656009279388,
+          "higher_is_better": true
+        }
+      }
+    }
+  },
+  "rice_disease": {
+    "method": "paired grouped bootstrap on locked-test predictions",
+    "repetitions": 2000,
+    "resampling_unit": "effective leakage-safe group",
+    "group_count": 655,
+    "same_sample_for_all_methods": true,
+    "conditioning_statement": "Intervals condition on the fitted models and locked split; they do not include retraining, repartitioning, or encoder-pretraining uncertainty.",
+    "model_intervals": {
+      "dinov2_vitb14": {
+        "accuracy": {
+          "mean": 1.0,
+          "lower_95": 1.0,
+          "upper_95": 1.0,
+          "positive_share": 1.0,
+          "point_estimate": 1.0
+        },
+        "log_loss": {
+          "mean": 0.0016154305072526216,
+          "lower_95": 0.000386238503952101,
+          "upper_95": 0.0037421205134251408,
+          "positive_share": 1.0,
+          "point_estimate": 0.0015923033593118311
+        }
+      },
+      "feature_concatenation": {
+        "accuracy": {
+          "mean": 1.0,
+          "lower_95": 1.0,
+          "upper_95": 1.0,
+          "positive_share": 1.0,
+          "point_estimate": 1.0
+        },
+        "log_loss": {
+          "mean": 0.0005811608807584132,
+          "lower_95": 0.0005002252506593657,
+          "upper_95": 0.0006762029543197245,
+          "positive_share": 1.0,
+          "point_estimate": 0.0005797004504888489
+        }
+      }
+    },
+    "difference_intervals": {
+      "feature_concatenation_minus_dinov2_vitb14": {
+        "accuracy": {
+          "mean": 0.0,
+          "lower_95": 0.0,
+          "upper_95": 0.0,
+          "positive_share": 0.0,
+          "point_estimate": 0.0,
+          "higher_is_better": true
+        },
+        "log_loss": {
+          "mean": -0.0010342696264942087,
+          "lower_95": -0.003167670014665952,
+          "upper_95": 0.0002087572764195126,
+          "positive_share": 0.1065,
+          "point_estimate": -0.0010126029088229822,
+          "higher_is_better": false
+        }
+      }
+    }
+  }
+}

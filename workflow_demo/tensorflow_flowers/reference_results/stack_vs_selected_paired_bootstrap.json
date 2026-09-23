@@ -1,0 +1,17 @@
+{
+  "selected_accuracy": 0.9836363636363636,
+  "selected_log_loss": 0.05969838540893699,
+  "stack_accuracy": 0.9836363636363636,
+  "stack_log_loss": 0.07766477951082723,
+  "accuracy_difference": 0.0,
+  "log_loss_difference": 0.017966394101890243,
+  "accuracy_interval": [
+    -0.00545454545454549,
+    0.00545454545454549
+  ],
+  "log_loss_interval": [
+    0.0003032877220551484,
+    0.04064993019601178
+  ],
+  "models_retrained_in_draw": false
+}

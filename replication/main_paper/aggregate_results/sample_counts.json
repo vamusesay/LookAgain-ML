@@ -1,0 +1,44 @@
+[
+  {
+    "dataset": "toronto_houses",
+    "rows": 7273,
+    "test_rows": 1090,
+    "groups": 7262,
+    "manifest_sha256": "b7d6ad5eaea2a932b3b7715290cfe4d8d73779e27eca883147e1ce82992e63c1"
+  },
+  {
+    "dataset": "obs_horses",
+    "rows": 9729,
+    "test_rows": 1459,
+    "groups": 9461,
+    "manifest_sha256": "9bff4adf44d19c49dd743a7c3a02df59e96d056e9e189ac4149431c47ff0945d"
+  },
+  {
+    "dataset": "breakhis",
+    "rows": 7909,
+    "test_rows": 1129,
+    "groups": 82,
+    "manifest_sha256": "657f307d3459ab08815cc4c634d6dd156a3872d47e415846fda0aaeab8ce81de"
+  },
+  {
+    "dataset": "pneumonia",
+    "rows": 5856,
+    "test_rows": 878,
+    "groups": 3117,
+    "manifest_sha256": "d3ebeef58b7f7b8efa536992018994ba21f7a5fe2f621a695db2d8ea38abad3b"
+  },
+  {
+    "dataset": "facial_age",
+    "rows": 9764,
+    "test_rows": 1465,
+    "groups": 9658,
+    "manifest_sha256": "3eb2c3a8ee076db1de166954977d7390c55f630631b6ae3ac1f664e60d492180"
+  },
+  {
+    "dataset": "rice_disease",
+    "rows": 5932,
+    "test_rows": 759,
+    "groups": 4794,
+    "manifest_sha256": "c21880b138bf14c9cc863800f192a543ae5b761c411efbcaa7868702e8f1e45f"
+  }
+]

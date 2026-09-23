@@ -1,0 +1,12 @@
+\begin{tabular}{lcccc}
+\toprule
+Dataset & ResNet & Selected single & Preferred procedure & Gain (95\% CI)\\
+\midrule
+Houses ($R^2$) & 0.396 & 0.629 (SigLIP 2-B/16) & 0.658 (linear stack) & 0.029 $[0.017,0.042]$\\
+Horses ($R^2$) & 0.029 & 0.105 (DINOv2-B/14) & 0.111 (feature union) & 0.006 $[-0.017,0.031]$\\
+BreaKHis (acc.) & 0.895 & 0.878 (VGG16) & 0.931 (equal average) & 0.053 $[0.016,0.100]$\\
+Pneumonia (acc.) & 0.942 & 0.965 (ConvNeXt-B) & 0.979 (feature union) & 0.015 $[0.002,0.028]$\\
+Facial age (MAE) & 9.912 & 4.786 (SigLIP 2-B/16) & 4.867 (linear stack) & -0.081 $[-0.447,0.139]$\\
+Rice disease (acc.) & 0.997 & 1.000 (DINOv2-B/14) & 1.000 (feature union) & 0.000 $[0.000,0.000]$\\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,11 @@
+encoder,checkpoint,checkpoint_revision,feature_dimension,pooling
+ade20k_segformer,nvidia/segformer-b0-finetuned-ade-512-512,489d5cd81a0b59fab9b7ea758d3548ebe99677da,150,hard argmax segmentation map followed by normalized 150-class pixel histogram
+coco_deeplab,torchvision::DeepLabV3_MobileNet_V3_Large_Weights.COCO_WITH_VOC_LABELS_V1,COCO_WITH_VOC_LABELS_V1,21,"softmax over 21 segmentation logits, then spatial mean class probabilities"
+convnext_b,torchvision::ConvNeXt_Base_Weights.IMAGENET1K_V1,IMAGENET1K_V1,1024,"global-average pool, classifier LayerNorm, flatten; final linear layer removed"
+dinov2_vitb14,facebook/dinov2-base,f9e44c814b77203eaa57a6bdbbd535f21ede1415,768,"final hidden-state class token (last_hidden_state[:, 0])"
+inception_v3,torchvision::Inception_V3_Weights.IMAGENET1K_V1,IMAGENET1K_V1,2048,2048-dimensional global-average-pooled penultimate feature; fc and auxiliary head removed
+mobilenet_v2,torchvision::MobileNet_V2_Weights.IMAGENET1K_V1,IMAGENET1K_V1,1280,1280-dimensional adaptive-global-average-pooled feature; classifier removed
+resnet50,torchvision::ResNet50_Weights.IMAGENET1K_V1,IMAGENET1K_V1,2048,2048-dimensional global-average-pooled penultimate feature
+siglip2_b16,google/siglip2-base-patch16-224,75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2,768,768-dimensional pooled vision output returned by get_image_features
+vgg16,torchvision::VGG16_Weights.IMAGENET1K_V1,IMAGENET1K_V1,512,global average over the final convolutional feature map
+vit_b16,torchvision::ViT_B_16_Weights.IMAGENET1K_V1,IMAGENET1K_V1,768,final encoder class token; classification heads removed

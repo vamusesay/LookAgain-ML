@@ -1,0 +1,742 @@
+[
+  {
+    "label": "tab:splitqc",
+    "title": "Final sample and leakage audit. $N$ is the common-complete analysis sample.",
+    "source": "appendix/appendix.tex",
+    "line": 6,
+    "assets": [],
+    "generators": [],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "appendix/appendix.tex": "8ab53e528458f1cb7757c4a1286343e3b546d8cf5b297e3458eb69defe7f6430"
+    },
+    "stable_title": "Final sample and leakage audit. $N$ is the common-complete analysis sample.",
+    "generating_script": "Inline manuscript design table; compare aggregate_results/sample_counts.json",
+    "aggregate_outputs": [
+      "sample_counts.json"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Approved groups: Toronto 7,262; facial age 9,658; rice 4,794. Observation and test counts unchanged. Toronto original constructor not claimed.",
+    "aggregate_checksums": {
+      "sample_counts.json": "696e7c7479c4ef2137c4d104d59b4b53c3b935061418cbb5920a9bd58a2ae4e6"
+    }
+  },
+  {
+    "label": "tab:regfull",
+    "title": "Regression single-encoder results. Houses and horses report $R^2$; facial age reports MAE in years, where lower is better.",
+    "source": "appendix/appendix.tex",
+    "line": 47,
+    "assets": [
+      "tables/generated_single_regression"
+    ],
+    "generators": [
+      "generate_manuscript_tables.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "tables/generated_single_regression": "d12604d2599a001970ac7d7820cdc6805acf9bdcb6381a13dd702b76c6086843"
+    },
+    "stable_title": "Regression single-encoder results. Houses and horses report $R^2$; facial age reports MAE in years, where lower is better.",
+    "generating_script": "analysis/generate_manuscript_tables.py",
+    "aggregate_outputs": [
+      "fixed_all_methods.csv"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "fixed_all_methods.csv": "0940448ff53891287e6eb8eb80c0f744c369e07619dc239adc691ae6ba420760"
+    }
+  },
+  {
+    "label": "tab:classfull",
+    "title": "Classification single-encoder accuracy. Selection uses validation log loss, not the printed test accuracy.",
+    "source": "appendix/appendix.tex",
+    "line": 55,
+    "assets": [
+      "tables/generated_single_classification"
+    ],
+    "generators": [
+      "generate_manuscript_tables.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "tables/generated_single_classification": "750dd06bc4e6c94a7c16a60e4f940190c2a03e560189333821ac614751bb8db5"
+    },
+    "stable_title": "Classification single-encoder accuracy. Selection uses validation log loss, not the printed test accuracy.",
+    "generating_script": "analysis/generate_manuscript_tables.py",
+    "aggregate_outputs": [
+      "fixed_all_methods.csv"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "fixed_all_methods.csv": "0940448ff53891287e6eb8eb80c0f744c369e07619dc239adc691ae6ba420760"
+    }
+  },
+  {
+    "label": "tab:combofull",
+    "title": "Fixed-split combination candidates. Each candidate is fitted without outer-validation outcomes. Age is MAE; other columns are $R^2$ or accuracy.",
+    "source": "appendix/appendix.tex",
+    "line": 63,
+    "assets": [
+      "tables/generated_combinations"
+    ],
+    "generators": [
+      "generate_manuscript_tables.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "tables/generated_combinations": "05f23737d0fb73dbcec082d870fa7d840d93333060800e9ecda0a7eeb694e73f"
+    },
+    "stable_title": "Fixed-split combination candidates. Each candidate is fitted without outer-validation outcomes. Age is MAE; other columns are $R^2$ or accuracy.",
+    "generating_script": "analysis/generate_manuscript_tables.py",
+    "aggregate_outputs": [
+      "fixed_all_methods.csv"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "fixed_all_methods.csv": "0940448ff53891287e6eb8eb80c0f744c369e07619dc239adc691ae6ba420760"
+    }
+  },
+  {
+    "label": "fig:appcorrelations",
+    "title": "\\textbf{Prediction and residual correlation diagnostics for houses (top) and horses (bottom).} Each matrix uses the corrected fitted single-encoder predictions on the same locked observations.",
+    "source": "appendix/appendix.tex",
+    "line": 80,
+    "assets": [
+      "figures/appendix_house_correlations.pdf",
+      "figures/appendix_horse_correlations.pdf"
+    ],
+    "generators": [
+      "generate_manuscript_figures.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "figures/appendix_house_correlations.pdf": "a4b7165296d464633cda5721cd3508e5e72af34d3e999b79cb34b6d69ea848f8",
+      "figures/appendix_horse_correlations.pdf": "7ef2a9c18a809fae5cc2b0294bd451ad9b5786a00442e16ea03c170574bf13e3"
+    },
+    "stable_title": "Prediction and residual correlation diagnostics for houses (top) and horses (bottom). Each matrix uses the corrected fitted single-encoder predictions on the same locked observations.",
+    "generating_script": "analysis/generate_manuscript_figures.py",
+    "aggregate_outputs": [
+      "correlations.json"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "correlations.json": "c6cd1ddc4d7c23d836a401e9b2f062d2ee1ee3b38389527415ef51ffc8e83972"
+    }
+  },
+  {
+    "label": "tab:logme",
+    "title": "LogME rank association with validation ranking. Winner agreement is a screening diagnostic and never replaces validation.",
+    "source": "appendix/appendix.tex",
+    "line": 98,
+    "assets": [
+      "tables/generated_logme"
+    ],
+    "generators": [
+      "generate_manuscript_tables.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "tables/generated_logme": "84e94090732a5337e58582e3f08fe254efb02cde9324f644aa1c8b5bd628cd46"
+    },
+    "stable_title": "LogME rank association with validation ranking. Winner agreement is a screening diagnostic and never replaces validation.",
+    "generating_script": "analysis/generate_manuscript_tables.py",
+    "aggregate_outputs": [
+      "diagnostics/logme_rank_diagnostics.csv"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "diagnostics/logme_rank_diagnostics.csv": "9481e52c4561098f6df722eaa1d04827ef5cc86d1f668cd3d9b3a1a32f792d9e"
+    }
+  },
+  {
+    "label": "tab:nnmotivation",
+    "title": "Linear and neural heads for the two motivating applications. Values are locked-test $R^2$; neural metrics use predictions averaged across five seeds fixed in the implemented workflow.",
+    "source": "appendix/appendix.tex",
+    "line": 122,
+    "assets": [
+      "tables/generated_nn_motivation"
+    ],
+    "generators": [
+      "generate_neural_assets.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "tables/generated_nn_motivation": "f5d7665a195cfaae86d97c9e17ded1e727a7becacef62cd940645951ee3f6d81"
+    },
+    "stable_title": "Linear and neural heads for the two motivating applications. Values are locked-test $R^2$; neural metrics use predictions averaged across five seeds fixed in the implemented workflow.",
+    "generating_script": "analysis/generate_neural_assets.py",
+    "aggregate_outputs": [
+      "fixed_all_methods.csv",
+      "neural_head_metrics.csv"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "fixed_all_methods.csv": "0940448ff53891287e6eb8eb80c0f744c369e07619dc239adc691ae6ba420760",
+      "neural_head_metrics.csv": "ffedfe4bd80789d66f09ff6900eaa39ff972fb7db9f7caa3246be08602783d9d"
+    }
+  },
+  {
+    "label": "tab:agenn",
+    "title": "Continuous-age neural-head MAE and across-seed SD, both in years.",
+    "source": "appendix/appendix.tex",
+    "line": 130,
+    "assets": [
+      "tables/generated_age_nn"
+    ],
+    "generators": [
+      "generate_neural_assets.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "tables/generated_age_nn": "aa8d881da5cd3f011381ac72c38b62a4b603dcb279d6c7af7820d365ca61d684"
+    },
+    "stable_title": "Continuous-age neural-head MAE and across-seed SD, both in years.",
+    "generating_script": "analysis/generate_neural_assets.py",
+    "aggregate_outputs": [
+      "neural_head_metrics.csv"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "neural_head_metrics.csv": "ffedfe4bd80789d66f09ff6900eaa39ff972fb7db9f7caa3246be08602783d9d"
+    }
+  },
+  {
+    "label": "fig:appnn",
+    "title": "\\textbf{Neural-head robustness.} Left: within-task normalized neural-head improvement for every dataset--encoder cell; positive values favor the neural head. Right: mean linear-head rank against mean neural-head rank across the six tasks. Ties receive average ranks and lower is better.",
+    "source": "appendix/appendix.tex",
+    "line": 138,
+    "assets": [
+      "figures/appendix_nn_heatmap.pdf",
+      "figures/appendix_nn_rank.pdf"
+    ],
+    "generators": [
+      "generate_neural_assets.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "figures/appendix_nn_heatmap.pdf": "73cebdcf29ba935c25e1e2edd19b6ca191ddb97748559562f128b9b72bf0f39f",
+      "figures/appendix_nn_rank.pdf": "ee9acdb796531cf350201d42fc6443125cb0fbd90d3d913b911871f03485ffa4"
+    },
+    "stable_title": "Neural-head robustness. Left: within-task normalized neural-head improvement for every dataset--encoder cell; positive values favor the neural head. Right: mean linear-head rank against mean neural-head rank across the six tasks. Ties receive average ranks and lower is better.",
+    "generating_script": "analysis/generate_neural_assets.py",
+    "aggregate_outputs": [
+      "fixed_all_methods.csv",
+      "neural_head_metrics.csv"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "fixed_all_methods.csv": "0940448ff53891287e6eb8eb80c0f744c369e07619dc239adc691ae6ba420760",
+      "neural_head_metrics.csv": "ffedfe4bd80789d66f09ff6900eaa39ff972fb7db9f7caa3246be08602783d9d"
+    }
+  },
+  {
+    "label": "tab:cost",
+    "title": "Recorded encoder characteristics and descriptive median cache-creation throughput across seven task records. These heterogeneous timings are not a standardized comparison on common hardware and a common extraction protocol.",
+    "source": "appendix/appendix.tex",
+    "line": 155,
+    "assets": [
+      "tables/generated_cost",
+      "generated/cost_note"
+    ],
+    "generators": [
+      "generate_manuscript_tables.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "tables/generated_cost": "ccab7cb12689b98a946dd5b240d69b0ed95da1dd23530d10f3f55d81e81bebe5",
+      "generated/cost_note": "87ab7ca40f5d94b57ead308b0c68f52e564a091e06a356306519ef146cf4ba0e"
+    },
+    "stable_title": "Recorded encoder characteristics and descriptive median cache-creation throughput across seven task records. These heterogeneous timings are not a standardized comparison on common hardware and a common extraction protocol.",
+    "generating_script": "analysis/generate_cost_table.py",
+    "aggregate_outputs": [
+      "cost_records.json"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Recorded values retained. Seven heterogeneous task records qualified under C05A; no controlled speed or deployment-latency comparison.",
+    "aggregate_checksums": {
+      "cost_records.json": "32916df9ba87e7c7db3d09c0b600c72749bb2f32a025345d63bfabc23fa06b77"
+    }
+  },
+  {
+    "label": "fig:flowers-selection",
+    "title": "Outer-validation log loss for ten frozen representations under training-only tuning. Lower is better; the highlighted representation was selected without using test outcomes.",
+    "source": "appendix/flowers_public_demo/public_flowers_demo.tex",
+    "line": 20,
+    "assets": [
+      "appendix/flowers_public_demo/figures/validation_selection.pdf"
+    ],
+    "generators": [
+      "generate_flowers_artifacts.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "appendix/flowers_public_demo/figures/validation_selection.pdf": "11ee2be626c4b28fa38b86b9fc0340e57f419a429753fd98aa6b32382ab4c64f"
+    },
+    "stable_title": "Outer-validation log loss for ten frozen representations under training-only tuning. Lower is better; the highlighted representation was selected without using test outcomes.",
+    "generating_script": "analysis/generate_flowers_artifacts.py",
+    "aggregate_outputs": [
+      "fixed_metrics.csv"
+    ],
+    "restricted_data_requirement": "Public images and checkpoints required for model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "fixed_metrics.csv": "2227f86a0d38603917431f5fb64596f76b1b9ff534d96c899d4d675ff1f9572a"
+    }
+  },
+  {
+    "label": "fig:flowers-uncertainty",
+    "title": "All-ten stack minus validation-selected SigLIP~2-B/16 on the locked test. Bars are paired 95\\% conditional bootstrap intervals from fixed fitted predictions. Zero denotes no difference; negative log-loss differences favor the stack.",
+    "source": "appendix/flowers_public_demo/public_flowers_demo.tex",
+    "line": 35,
+    "assets": [
+      "appendix/flowers_public_demo/figures/paired_uncertainty.pdf"
+    ],
+    "generators": [
+      "generate_flowers_artifacts.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "appendix/flowers_public_demo/figures/paired_uncertainty.pdf": "94ebd1bf88cc2b568cfb8ac5d075bcf4459e1f13ee6316f25868f023d7427432"
+    },
+    "stable_title": "All-ten stack minus validation-selected SigLIP~2-B/16 on the locked test. Bars are paired 95\\% conditional bootstrap intervals from fixed fitted predictions. Zero denotes no difference; negative log-loss differences favor the stack.",
+    "generating_script": "analysis/generate_flowers_artifacts.py",
+    "aggregate_outputs": [
+      "stack_vs_selected_paired_bootstrap.json"
+    ],
+    "restricted_data_requirement": "Public images and checkpoints required for model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "stack_vs_selected_paired_bootstrap.json": "d1008c35d0d14a010e20f41b4530f8775493f9d349ec366a6370ea9251783c40"
+    }
+  },
+  {
+    "label": "fig:flowers-stability",
+    "title": "Empirical test-accuracy variation across twelve group-safe splits fixed in the implemented workflow for the selected single encoder and all-ten cross-fitted stack. Bars show empirical 2.5th--97.5th percentiles, not confidence intervals.",
+    "source": "appendix/flowers_public_demo/public_flowers_demo.tex",
+    "line": 50,
+    "assets": [
+      "appendix/flowers_public_demo/figures/split_stability.pdf"
+    ],
+    "generators": [
+      "generate_flowers_artifacts.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "appendix/flowers_public_demo/figures/split_stability.pdf": "4beda02d9d898b5bd63ee8facc2db25406be2e3b6c9a52d89ebf4eaa30c0308e"
+    },
+    "stable_title": "Empirical test-accuracy variation across twelve group-safe splits fixed in the implemented workflow for the selected single encoder and all-ten cross-fitted stack. Bars show empirical 2.5th--97.5th percentiles, not confidence intervals.",
+    "generating_script": "analysis/generate_flowers_artifacts.py",
+    "aggregate_outputs": [
+      "repeated_metrics.csv"
+    ],
+    "restricted_data_requirement": "Public images and checkpoints required for model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "repeated_metrics.csv": "107bbf4ec71ef166fe32fc27e532860c522db5ce297ded820e3771fe1e37984e"
+    }
+  },
+  {
+    "label": "fig:flowers-cost",
+    "title": "Observed representation extraction time and outer-validation log loss on the recorded analysis environment. Timings describe this hardware and sample and should not be generalized mechanically.",
+    "source": "appendix/flowers_public_demo/public_flowers_demo.tex",
+    "line": 63,
+    "assets": [
+      "appendix/flowers_public_demo/figures/cost_performance.pdf"
+    ],
+    "generators": [
+      "generate_flowers_artifacts.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "appendix/flowers_public_demo/figures/cost_performance.pdf": "9ab5311227808f39163a38b4d8e5361a9a13d87f910d294e2d6f8749e80d041d"
+    },
+    "stable_title": "Observed representation extraction time and outer-validation log loss on the recorded analysis environment. Timings describe this hardware and sample and should not be generalized mechanically.",
+    "generating_script": "analysis/generate_flowers_artifacts.py",
+    "aggregate_outputs": [
+      "fixed_metrics.csv",
+      "extraction_costs.json"
+    ],
+    "restricted_data_requirement": "Public images and checkpoints required for model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "fixed_metrics.csv": "2227f86a0d38603917431f5fb64596f76b1b9ff534d96c899d4d675ff1f9572a",
+      "extraction_costs.json": "54c4477e0bc8e59d57e0bcac6b85f5f71113c91a214a33e081749fb72003c89e"
+    }
+  },
+  {
+    "label": "tab:flowers-performance",
+    "title": "Locked-test Flowers performance after training-only tuning. Selection uses outer-validation log loss.",
+    "source": "appendix/flowers_public_demo/tables/encoder_performance.tex",
+    "line": 1,
+    "assets": [],
+    "generators": [],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "appendix/flowers_public_demo/tables/encoder_performance.tex": "76ec4e34393c1f80f0902ea411dae3b3783325f8f9194ab0544bd8839527d3eb"
+    },
+    "stable_title": "Locked-test Flowers performance after training-only tuning. Selection uses outer-validation log loss.",
+    "generating_script": "analysis/generate_flowers_artifacts.py",
+    "aggregate_outputs": [
+      "fixed_metrics.csv"
+    ],
+    "restricted_data_requirement": "Public images and checkpoints required for model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "fixed_metrics.csv": "2227f86a0d38603917431f5fb64596f76b1b9ff534d96c899d4d675ff1f9572a"
+    }
+  },
+  {
+    "label": "tab:flowers-stability",
+    "title": "Flowers split stability under nested out-of-fold fitting and outer-validation selection.",
+    "source": "appendix/flowers_public_demo/tables/split_stability.tex",
+    "line": 1,
+    "assets": [],
+    "generators": [],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "appendix/flowers_public_demo/tables/split_stability.tex": "aaad85aab8f44e1af66e24206a4a69ae74cee763667400e2feb4e4aea11b2da0"
+    },
+    "stable_title": "Flowers split stability under nested out-of-fold fitting and outer-validation selection.",
+    "generating_script": "analysis/generate_flowers_artifacts.py",
+    "aggregate_outputs": [
+      "repeated_metrics.csv"
+    ],
+    "restricted_data_requirement": "Public images and checkpoints required for model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "repeated_metrics.csv": "107bbf4ec71ef166fe32fc27e532860c522db5ce297ded820e3771fe1e37984e"
+    }
+  },
+  {
+    "label": "tab:flowers-uncertainty",
+    "title": "Paired Flowers comparison from fixed fitted test predictions. Differences are stack minus selected single.",
+    "source": "appendix/flowers_public_demo/tables/paired_uncertainty.tex",
+    "line": 1,
+    "assets": [],
+    "generators": [],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "appendix/flowers_public_demo/tables/paired_uncertainty.tex": "ac65822a884b82aeb5cac39fd31a45aa64c98a59ce8b3425370f9339709659d1"
+    },
+    "stable_title": "Paired Flowers comparison from fixed fitted test predictions. Differences are stack minus selected single.",
+    "generating_script": "analysis/generate_flowers_artifacts.py",
+    "aggregate_outputs": [
+      "stack_vs_selected_paired_bootstrap.json"
+    ],
+    "restricted_data_requirement": "Public images and checkpoints required for model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "stack_vs_selected_paired_bootstrap.json": "d1008c35d0d14a010e20f41b4530f8775493f9d349ec366a6370ea9251783c40"
+    }
+  },
+  {
+    "label": "tab:flowers-design",
+    "title": "Public TensorFlow Flowers demonstration: sample construction and locked design.",
+    "source": "appendix/flowers_public_demo/tables/study_design.tex",
+    "line": 1,
+    "assets": [],
+    "generators": [],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "appendix/flowers_public_demo/tables/study_design.tex": "220de386189566369ce796f15b52a5413aa51b889e41d50ce291a768e3d3fdf1"
+    },
+    "stable_title": "Public TensorFlow Flowers demonstration: sample construction and locked design.",
+    "generating_script": "analysis/generate_design_cost.py",
+    "aggregate_outputs": [
+      "preparation_summary.json",
+      "repeated_metrics.csv"
+    ],
+    "restricted_data_requirement": "Public images and checkpoints required for model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "preparation_summary.json": "ce37944100bbd1ee8e528b894880868f67325f6e2c3db191dad9e552a1aff498",
+      "repeated_metrics.csv": "107bbf4ec71ef166fe32fc27e532860c522db5ce297ded820e3771fe1e37984e"
+    }
+  },
+  {
+    "label": "tab:flowers-cost",
+    "title": "Fresh encoder extraction on the replication machine (RTX 3060, 3,668 images). Timings exclude model download.",
+    "source": "appendix/flowers_public_demo/tables/computational_cost.tex",
+    "line": 1,
+    "assets": [],
+    "generators": [],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "appendix/flowers_public_demo/tables/computational_cost.tex": "712263ba8deb7a4c58d5991251385c65256998fae0c39641b15663fa1eb9ab56"
+    },
+    "stable_title": "Fresh encoder extraction on the replication machine (RTX 3060, 3,668 images). Timings exclude model download.",
+    "generating_script": "analysis/generate_design_cost.py",
+    "aggregate_outputs": [
+      "extraction_costs.json"
+    ],
+    "restricted_data_requirement": "Public images and checkpoints required for model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "extraction_costs.json": "54c4477e0bc8e59d57e0bcac6b85f5f71113c91a214a33e081749fb72003c89e"
+    }
+  },
+  {
+    "label": "tab:datasets",
+    "title": "Main datasets and locked test designs. $N$ is the common-complete sample used for encoder comparisons.",
+    "source": "main.tex",
+    "line": 80,
+    "assets": [],
+    "generators": [],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "main.tex": "bd556f358355d7f8f93fff119d8c905927ba28d9d008ec88e4a0283c79b4659f"
+    },
+    "stable_title": "Main datasets and locked test designs. $N$ is the common-complete sample used for encoder comparisons.",
+    "generating_script": "Inline manuscript design table; compare aggregate_results/sample_counts.json",
+    "aggregate_outputs": [
+      "sample_counts.json"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "sample_counts.json": "696e7c7479c4ef2137c4d104d59b4b53c3b935061418cbb5920a9bd58a2ae4e6"
+    }
+  },
+  {
+    "label": "fig:motivation",
+    "title": "\\textbf{Representation choice and combination in the two motivating applications.} Dots report locked-test $R^2$; horizontal bars are 95\\% grouped-bootstrap intervals from fixed fitted predictions. The same observations, dimension control, and ridge-head protocol are used within each panel. The final row is the procedure selected on outer-validation loss: a linear stack for houses and feature union for horses.",
+    "source": "main.tex",
+    "line": 111,
+    "assets": [
+      "figures/figure1_motivating_contrast.pdf"
+    ],
+    "generators": [
+      "generate_manuscript_figures.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "figures/figure1_motivating_contrast.pdf": "86e93a5e0eba46c9c56cba8e82a8ef8a8f85264307eb4822c024c5750b3db04d"
+    },
+    "stable_title": "Representation choice and combination in the two motivating applications. Dots report locked-test $R^2$; horizontal bars are 95\\% grouped-bootstrap intervals from fixed fitted predictions. The same observations, dimension control, and ridge-head protocol are used within each panel. The final row is the procedure selected on outer-validation loss: a linear stack for houses and feature union for horses.",
+    "generating_script": "analysis/generate_manuscript_figures.py",
+    "aggregate_outputs": [
+      "fixed_headline.csv",
+      "figure_intervals.json"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "fixed_headline.csv": "b83e7617c4c47c993f4ce036df4165bf9aeb1522bc380d25401aa2773fa9b5b3",
+      "figure_intervals.json": "447353fe6039fa27b92d7493047a3b30f7125ffde4a90f1ba14d73c556ab87b4"
+    }
+  },
+  {
+    "label": "tab:headline",
+    "title": "Locked-test headline results. The selected single minimizes outer-validation loss over all ten encoders. The preferred procedure minimizes comparable outer-validation loss over that single and the combination menu fixed in the implemented workflow. $\\Delta$ is oriented so positive values favor the preferred procedure.",
+    "source": "main.tex",
+    "line": 120,
+    "assets": [
+      "tables/generated_headline"
+    ],
+    "generators": [
+      "generate_manuscript_tables.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "tables/generated_headline": "17ca7205ea8880775281138b10e2001c167ef1d4d4e3e2d471917fa319f61204"
+    },
+    "stable_title": "Locked-test headline results. The selected single minimizes outer-validation loss over all ten encoders. The preferred procedure minimizes comparable outer-validation loss over that single and the combination menu fixed in the implemented workflow. $$ is oriented so positive values favor the preferred procedure.",
+    "generating_script": "analysis/generate_manuscript_tables.py",
+    "aggregate_outputs": [
+      "fixed_headline.csv"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "fixed_headline.csv": "b83e7617c4c47c993f4ce036df4165bf9aeb1522bc380d25401aa2773fa9b5b3"
+    }
+  },
+  {
+    "label": "fig:crossdomain",
+    "title": "\\textbf{Encoder choice and preferred procedure across the six main tasks.} Houses and horses report $R^2$; BreaKHis, pneumonia, and rice report accuracy. Facial age is shown on its own MAE-in-years scale, where lower is better. Selection uses validation MSE, MAE, or log loss as appropriate, not the displayed test metric.",
+    "source": "main.tex",
+    "line": 129,
+    "assets": [
+      "figures/figure2_cross_dataset.pdf"
+    ],
+    "generators": [
+      "generate_manuscript_figures.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "figures/figure2_cross_dataset.pdf": "64b1238831709b37f07e07e35c8ed44cb193493cd3c3fc26c31b0154555f0032"
+    },
+    "stable_title": "Encoder choice and preferred procedure across the six main tasks. Houses and horses report $R^2$; BreaKHis, pneumonia, and rice report accuracy. Facial age is shown on its own MAE-in-years scale, where lower is better. Selection uses validation MSE, MAE, or log loss as appropriate, not the displayed test metric.",
+    "generating_script": "analysis/generate_manuscript_figures.py",
+    "aggregate_outputs": [
+      "fixed_headline.csv"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "fixed_headline.csv": "b83e7617c4c47c993f4ce036df4165bf9aeb1522bc380d25401aa2773fa9b5b3"
+    }
+  },
+  {
+    "label": "tab:repeated",
+    "title": "Twelve group-safe repeated splits. Age columns are MAE; other performance columns use $R^2$ or accuracy. Gains are oriented so positive values favor the preferred procedure: preferred minus selected-single performance for $R^2$ and accuracy, and selected-single minus preferred MAE for age. ``Preferred SD'' is the sample standard deviation of preferred-procedure test performance across the twelve partitions, not a standard error. Means and differences are computed before rounding. ``Most selected'' reports all encoders tied at the maximum frequency.",
+    "source": "main.tex",
+    "line": 150,
+    "assets": [
+      "tables/generated_repeated"
+    ],
+    "generators": [
+      "generate_manuscript_tables.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "tables/generated_repeated": "31a4c5151832f79bde1bd532ae69472b222f900fd3b297b5b5ff90e350392453"
+    },
+    "stable_title": "Twelve group-safe repeated splits. Age columns are MAE; other performance columns use $R^2$ or accuracy. Gains are oriented so positive values favor the preferred procedure: preferred minus selected-single performance for $R^2$ and accuracy, and selected-single minus preferred MAE for age. ``Preferred SD'' is the sample standard deviation of preferred-procedure test performance across the twelve partitions, not a standard error. Means and differences are computed before rounding. ``Most selected'' reports all encoders tied at the maximum frequency.",
+    "generating_script": "analysis/generate_manuscript_tables.py",
+    "aggregate_outputs": [
+      "repeated_summary.csv"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "repeated_summary.csv": "20cda3f7d4fece29c7713c3003cc1333306ed0c74da85ff7b3d86fea8e0c0aa8"
+    }
+  },
+  {
+    "label": "fig:nn",
+    "title": "\\textbf{Flexible heads do not eliminate the ResNet50--DINOv2 gap.} Dots report locked-test $R^2$ for the common linear head and the small neural head on houses and horses. Neural metrics use predictions averaged across five seeds fixed in the implemented workflow. The full encoder comparison and the mean-rank diagnostic, which uses average ranks for ties and lower-is-better ranks, appear in Appendix~\\ref{app:nnfull}.",
+    "source": "main.tex",
+    "line": 175,
+    "assets": [
+      "figures/figure3_nn_robustness.pdf"
+    ],
+    "generators": [
+      "generate_neural_assets.py"
+    ],
+    "status": "PASS",
+    "required_inputs": "Published aggregates; restricted predictions for conditional intervals/correlations",
+    "configuration": "Frozen experiment configuration and generator constants; see private evidence",
+    "notebook_section": "Artifact reconciliation",
+    "checksum": {
+      "figures/figure3_nn_robustness.pdf": "beb95804dac3dda5ee4d44d2986b53c45cdf55258f4565c3cc9783b5e5fdbd38"
+    },
+    "stable_title": "Flexible heads do not eliminate the ResNet50--DINOv2 gap. Dots report locked-test $R^2$ for the common linear head and the small neural head on houses and horses. Neural metrics use predictions averaged across five seeds fixed in the implemented workflow. The full encoder comparison and the mean-rank diagnostic, which uses average ranks for ties and lower-is-better ranks, appear in Appendix~app:nnfull.",
+    "generating_script": "analysis/generate_neural_assets.py",
+    "aggregate_outputs": [
+      "fixed_all_methods.csv",
+      "neural_head_metrics.csv"
+    ],
+    "restricted_data_requirement": "No restricted data for released aggregates; authorized data required to rerun substantive model fitting",
+    "verification_status": "PASS",
+    "verification_note": "Displayed content agrees with saved evidence at printed precision; scope limited to this artifact, not a universal historical-reload certificate.",
+    "aggregate_checksums": {
+      "fixed_all_methods.csv": "0940448ff53891287e6eb8eb80c0f744c369e07619dc239adc691ae6ba420760",
+      "neural_head_metrics.csv": "ffedfe4bd80789d66f09ff6900eaa39ff972fb7db9f7caa3246be08602783d9d"
+    }
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "dino_minus_resnet_r2": 0.21614712608872866,
+  "paired_group_bootstrap_reps": 2000,
+  "lower_95": 0.1423232638419879,
+  "upper_95": 0.2744675850796285,
+  "positive_share": 1.0
+}

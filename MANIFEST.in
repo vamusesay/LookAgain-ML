@@ -1,0 +1,8 @@
+include LICENSE README.md CITATION.cff CONTRIBUTING.md CHANGELOG.md
+recursive-include src *.py py.typed
+recursive-include tests *.py
+recursive-include docs *.md
+recursive-include replication *.py *.md *.json *.csv *.ipynb *.tex *.pdf
+recursive-include environment *.txt *.json
+
+recursive-include workflow_demo *.py *.md *.json *.csv *.ipynb *.tex *.pdf *.sha256

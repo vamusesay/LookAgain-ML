@@ -1,0 +1,7 @@
+dataset,spearman_logme_vs_validation_rank,spearman_logme_vs_test_rank,logme_top,validation_top,test_top,validation_winner_agreement,test_winner_agreement
+toronto_houses,0.9515151515151514,0.9878787878787878,siglip2_b16,siglip2_b16,siglip2_b16,True,True
+obs_horses,0.8545454545454544,0.7939393939393938,dinov2_vitb14,dinov2_vitb14,dinov2_vitb14,True,True
+breakhis,0.24848484848484845,0.7477238187264795,siglip2_b16,vgg16,mobilenet_v2,False,False
+pneumonia,0.8060606060606059,0.6606060606060605,convnext_b,convnext_b,convnext_b,True,True
+facial_age,0.9999999999999999,0.9999999999999999,siglip2_b16,siglip2_b16,siglip2_b16,True,True
+rice_disease,0.9515151515151514,0.8062492659146293,siglip2_b16,dinov2_vitb14,dinov2_vitb14,False,False

@@ -1,0 +1,8 @@
+[
+  {
+    "file": "src/lookagain_ml/rf_score.py",
+    "original_sha256": "6c22446c97e17ed8e298b31bbe8b089529d08ab4a34a07bc9fb1fa54ad9a12e8",
+    "delivered_sha256": "3a4d639e3ea652164dde9d77df70013b437a6237962b70c75deb23a367b79788",
+    "change": "Module docstring removes the excluded application name; executable statements unchanged"
+  }
+]

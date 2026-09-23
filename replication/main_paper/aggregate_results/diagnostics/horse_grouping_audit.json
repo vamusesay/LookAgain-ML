@@ -1,0 +1,26 @@
+{
+  "analysis_rows": 9729,
+  "final_group_count": 9461,
+  "multi_row_groups": 266,
+  "max_group_size": 3,
+  "links_by_identifier_type": {
+    "name_identity_key": {
+      "nonblank_rows": 917,
+      "repeated_keys": 19,
+      "rows_in_repeated_keys": 38
+    },
+    "pedigree_identity_key": {
+      "nonblank_rows": 9729,
+      "repeated_keys": 261,
+      "rows_in_repeated_keys": 522
+    },
+    "photo_identity_key": {
+      "nonblank_rows": 9729,
+      "repeated_keys": 64,
+      "rows_in_repeated_keys": 128
+    }
+  },
+  "ambiguities": "Conservative exact normalized name, complete sire/dam/sex/foaling identity, and exact photograph hash are connected transitively; no fuzzy-name or test-informed links are added.",
+  "fixed_split_crossing_groups": 0,
+  "repeated_split_crossing_groups": 0
+}

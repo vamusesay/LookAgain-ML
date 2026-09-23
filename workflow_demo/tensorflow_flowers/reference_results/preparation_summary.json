@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-09-17T16:05:30.371642+00:00",
+  "package_version": "1.0.0",
+  "dataset": "TensorFlow Flowers",
+  "official_url": "https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz",
+  "archive_provenance": "verified_durable_archive_copied_to_local_session",
+  "archive_bytes": 228813984,
+  "archive_sha256": "4C54ACE7911AAFFE13A365C34F650E71DD5BF1BE0A58B464E5A7183E3E595D9C",
+  "analysis_manifest_sha256": "67FF21B54ED7D2106D33F9B96725374E8F940E477E4452B15F66248198D180C7",
+  "locked_split_sha256": "668D15E9535CE943051F86300EB8C9704AFC59252E14E427244E73A2CAF5E97B",
+  "audit": {
+    "source_images": 3670,
+    "analysis_rows": 3668,
+    "excluded_cross_class_duplicate_rows": 2,
+    "exact_duplicate_groups": 3,
+    "unique_analysis_groups": 3666
+  },
+  "split": {
+    "counts": {
+      "train": 2568,
+      "validation": 550,
+      "test": 550
+    },
+    "effective_groups": 3666
+  },
+  "local_staging": true,
+  "images_read_from_mounted_drive_during_analysis": false
+}

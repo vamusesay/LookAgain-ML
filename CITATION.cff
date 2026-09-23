@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+message: "Please cite LookAgain-ML and the accompanying representation-risk study."
+title: "LookAgain-ML"
+version: "1.0.0"
+type: software
+license: MIT

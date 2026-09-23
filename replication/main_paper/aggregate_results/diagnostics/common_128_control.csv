@@ -1,0 +1,25 @@
+dataset,encoder,pca_dimensions,fit_partition,primary_metric,test_primary
+toronto_houses,resnet50,128,outer training; locked refit on train+validation for test,r2,0.3964002479810797
+toronto_houses,dinov2_vitb14,128,outer training; locked refit on train+validation for test,r2,0.6206632548463917
+toronto_houses,siglip2_b16,128,outer training; locked refit on train+validation for test,r2,0.6286643004442358
+toronto_houses,vit_b16,128,outer training; locked refit on train+validation for test,r2,0.4481841504774153
+obs_horses,resnet50,128,outer training; locked refit on train+validation for test,r2,0.0293232637875535
+obs_horses,dinov2_vitb14,128,outer training; locked refit on train+validation for test,r2,0.1046078222922821
+obs_horses,siglip2_b16,128,outer training; locked refit on train+validation for test,r2,0.0275022156044476
+obs_horses,vit_b16,128,outer training; locked refit on train+validation for test,r2,0.0194569046336602
+breakhis,resnet50,128,outer training; locked refit on train+validation for test,accuracy,0.895482728077945
+breakhis,dinov2_vitb14,128,outer training; locked refit on train+validation for test,accuracy,0.8547387068201948
+breakhis,siglip2_b16,128,outer training; locked refit on train+validation for test,accuracy,0.8777679362267493
+breakhis,vit_b16,128,outer training; locked refit on train+validation for test,accuracy,0.8644818423383526
+pneumonia,resnet50,128,outer training; locked refit on train+validation for test,accuracy,0.9419134396355352
+pneumonia,dinov2_vitb14,128,outer training; locked refit on train+validation for test,accuracy,0.9544419134396356
+pneumonia,siglip2_b16,128,outer training; locked refit on train+validation for test,accuracy,0.9441913439635536
+pneumonia,vit_b16,128,outer training; locked refit on train+validation for test,accuracy,0.9362186788154896
+facial_age,resnet50,128,outer training; locked refit on train+validation for test,mae,9.912405440614634
+facial_age,dinov2_vitb14,128,outer training; locked refit on train+validation for test,mae,5.907829694664852
+facial_age,siglip2_b16,128,outer training; locked refit on train+validation for test,mae,4.786035031529857
+facial_age,vit_b16,128,outer training; locked refit on train+validation for test,mae,9.29783438662345
+rice_disease,resnet50,128,outer training; locked refit on train+validation for test,accuracy,0.997364953886693
+rice_disease,dinov2_vitb14,128,outer training; locked refit on train+validation for test,accuracy,1.0
+rice_disease,siglip2_b16,128,outer training; locked refit on train+validation for test,accuracy,0.997364953886693
+rice_disease,vit_b16,128,outer training; locked refit on train+validation for test,accuracy,1.0

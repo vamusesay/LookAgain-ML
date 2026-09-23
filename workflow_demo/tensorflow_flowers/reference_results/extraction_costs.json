@@ -1,0 +1,105 @@
+{
+  "resnet50": {
+    "device": "cuda",
+    "parameter_count": 23508032,
+    "parameter_count_scope": "frozen image representation encoder",
+    "extraction_seconds": 20.46191209999961,
+    "images_per_second": 179.25988451490173,
+    "feature_dimension": 2048,
+    "peak_gpu_memory_bytes": 183309824,
+    "downstream_fit_and_prediction_seconds": 2.4538608999973803
+  },
+  "vgg16": {
+    "device": "cuda",
+    "parameter_count": 138357544,
+    "parameter_count_scope": "frozen image representation encoder",
+    "extraction_seconds": 26.094005099999777,
+    "images_per_second": 140.56868564036694,
+    "feature_dimension": 512,
+    "peak_gpu_memory_bytes": 868004352,
+    "downstream_fit_and_prediction_seconds": 0.7777439999990747
+  },
+  "inception_v3": {
+    "device": "cuda",
+    "parameter_count": 21785568,
+    "parameter_count_scope": "frozen image representation encoder",
+    "extraction_seconds": 25.656784299997526,
+    "images_per_second": 142.96413600048677,
+    "feature_dimension": 2048,
+    "peak_gpu_memory_bytes": 217672192,
+    "downstream_fit_and_prediction_seconds": 2.221451999997953
+  },
+  "mobilenet_v2": {
+    "device": "cuda",
+    "parameter_count": 2223872,
+    "parameter_count_scope": "frozen image representation encoder",
+    "extraction_seconds": 21.999349800003984,
+    "images_per_second": 166.73220042163862,
+    "feature_dimension": 1280,
+    "peak_gpu_memory_bytes": 97906176,
+    "downstream_fit_and_prediction_seconds": 5.348263899999438
+  },
+  "coco_deeplab": {
+    "device": "cuda",
+    "parameter_count": 11029328,
+    "parameter_count_scope": "frozen semantic segmentation model",
+    "extraction_seconds": 73.90992820000247,
+    "images_per_second": 49.62797406695191,
+    "feature_dimension": 21,
+    "downstream_fit_and_prediction_seconds": 0.19054890000552405
+  },
+  "ade20k_segformer": {
+    "device": "cuda",
+    "parameter_count": 3752694,
+    "parameter_count_scope": "frozen semantic segmentation model",
+    "checkpoint_revision": "489d5cd81a0b59fab9b7ea758d3548ebe99677da",
+    "extraction_seconds": 71.03208060000179,
+    "images_per_second": 51.63863945722445,
+    "feature_dimension": 150,
+    "downstream_fit_and_prediction_seconds": 0.5410284000026877
+  },
+  "dinov2_vitb14": {
+    "device": "cuda",
+    "parameter_count": 86580480,
+    "parameter_count_scope": "frozen image representation encoder",
+    "loaded_parameter_count": 86580480,
+    "checkpoint_revision": "f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+    "extraction_seconds": 50.1932455999995,
+    "images_per_second": 73.07756165502947,
+    "feature_dimension": 768,
+    "peak_gpu_memory_bytes": 454398976,
+    "downstream_fit_and_prediction_seconds": 0.5295748999997159
+  },
+  "siglip2_b16": {
+    "device": "cuda",
+    "parameter_count": 92884224,
+    "parameter_count_scope": "frozen image representation encoder",
+    "loaded_parameter_count": 375187970,
+    "checkpoint_revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+    "extraction_seconds": 44.5048758999983,
+    "images_per_second": 82.41793569410089,
+    "feature_dimension": 768,
+    "peak_gpu_memory_bytes": 1572574720,
+    "downstream_fit_and_prediction_seconds": 1.0323621000061394
+  },
+  "convnext_b": {
+    "device": "cuda",
+    "parameter_count": 87566464,
+    "parameter_count_scope": "frozen image representation encoder",
+    "extraction_seconds": 57.79988310000044,
+    "images_per_second": 63.46033596043678,
+    "feature_dimension": 1024,
+    "peak_gpu_memory_bytes": 494182912,
+    "downstream_fit_and_prediction_seconds": 1.0364893000005395
+  },
+  "vit_b16": {
+    "device": "cuda",
+    "parameter_count": 85798656,
+    "parameter_count_scope": "frozen image representation encoder",
+    "extraction_seconds": 84.63702009999542,
+    "images_per_second": 43.338009722771396,
+    "feature_dimension": 768,
+    "peak_gpu_memory_bytes": 425171968,
+    "downstream_fit_and_prediction_seconds": 1.2190435000011348
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "mode_label": "full private-data replication using installed LookAgain-ML",
+  "research_root": "${MULTI_ENCODERS_ROOT}",
+  "private_input_root": "${LOOKAGAIN_PRIVATE_INPUT_ROOT}",
+  "device": "auto",
+  "batch_size": 8,
+  "random_state": 20260818,
+  "bootstrap_repetitions": 2000,
+  "head_max_components": 256,
+  "head_pca_iterated_power": 3,
+  "logistic_max_iter": 700,
+  "bootstrap_metrics": null,
+  "logme": true,
+  "encoders": [
+    "resnet50",
+    "vgg16",
+    "inception_v3",
+    "mobilenet_v2",
+    "coco_deeplab",
+    "ade20k_segformer",
+    "dinov2_vitb14",
+    "siglip2_b16",
+    "convnext_b",
+    "vit_b16"
+  ],
+  "linear_cka": true,
+  "cka_training_sample": 400,
+  "paper_neural_heads": true,
+  "combinations": [
+    "equal_average",
+    "linear_stack",
+    "greedy_average",
+    "feature_concatenation"
+  ],
+  "resource_preflight": {
+    "load_encoders_sequentially": true,
+    "minimum_free_disk_gb": 15,
+    "recommended_cuda_batch_size": 8,
+    "recommended_cpu_batch_size": 2,
+    "provided_verified_embeddings_preferred_for_downstream_reanalysis": true
+  },
+  "appendix_analyses": {
+    "single_encoder_full_metrics": true,
+    "representative_ensembles": true,
+    "prediction_and_error_correlations": true,
+    "linear_cka_training_only": true,
+    "gelu_dropout_five_seed_heads": true,
+    "locked_test_grouped_bootstrap": true,
+    "actual_run_cost_reporting": true
+  },
+  "datasets": [
+    {
+      "name": "toronto_houses",
+      "task": "regression",
+      "expected_n": 7273,
+      "manifest": "${LOOKAGAIN_PRIVATE_INPUT_ROOT}/prepared/representation_risk/toronto_houses.local.csv",
+      "split_column": "split",
+      "reference_tolerances": {
+        "default": 0.0001
+      }
+    },
+    {
+      "name": "obs_horses",
+      "task": "regression",
+      "expected_n": 9729,
+      "paper_protocol": "representation_risk_iclr_2027_v1",
+      "reference_protocol_id": "representation_risk_iclr_2027_v1",
+      "manifest": "${LOOKAGAIN_PRIVATE_INPUT_ROOT}/prepared/representation_risk/obs_horses.local.csv",
+      "split_column": "split",
+      "reference_embedding_layout": "obs_horses",
+      "reference_model_column": "model",
+      "reference_model_aliases": {
+        "vgg16": "vgg16_gap",
+        "inception_v3": "inception_v3_gap",
+        "mobilenet_v2": "mobilenet_v2_gap",
+        "coco_deeplab": "coco_semantic",
+        "ade20k_segformer": "ade20k_scene"
+      },
+      "reference_tolerances": {
+        "default": 0.0001
+      }
+    },
+    {
+      "name": "breakhis",
+      "task": "classification",
+      "expected_n": 7909,
+      "head_working_dtype": "float32",
+      "manifest": "${LOOKAGAIN_PRIVATE_INPUT_ROOT}/prepared/representation_risk/breakhis.local.csv",
+      "split_column": "split",
+      "reference_embedding_layout": "representation_risk",
+      "reference_dataset": "breast_cancer",
+      "reference_tolerances": {
+        "default": 0.0001
+      }
+    },
+    {
+      "name": "pneumonia",
+      "task": "classification",
+      "expected_n": 5856,
+      "manifest": "${LOOKAGAIN_PRIVATE_INPUT_ROOT}/prepared/representation_risk/pneumonia.local.csv",
+      "split_column": "split",
+      "reference_embedding_layout": "representation_risk",
+      "reference_dataset": "pneumonia",
+      "reference_tolerances": {
+        "default": 0.0001
+      }
+    },
+    {
+      "name": "facial_age",
+      "task": "regression",
+      "expected_n": 9764,
+      "manifest": "${LOOKAGAIN_PRIVATE_INPUT_ROOT}/prepared/representation_risk/facial_age.local.csv",
+      "split_column": "split",
+      "reference_embedding_layout": "representation_risk",
+      "reference_dataset": "age",
+      "reference_tolerances": {
+        "default": 0.0001
+      }
+    },
+    {
+      "name": "rice_disease",
+      "task": "classification",
+      "expected_n": 5932,
+      "paper_protocol": "representation_risk_iclr_2027_v1",
+      "reference_protocol_id": "representation_risk_iclr_2027_v1",
+      "manifest": "${LOOKAGAIN_PRIVATE_INPUT_ROOT}/prepared/representation_risk/rice_disease.local.csv",
+      "split_column": "split",
+      "reference_embedding_layout": "representation_risk",
+      "reference_dataset": "rice",
+      "reference_tolerances": {
+        "default": 0.0001
+      }
+    }
+  ]
+}
