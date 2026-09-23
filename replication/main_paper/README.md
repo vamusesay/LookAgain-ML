@@ -23,9 +23,9 @@ Cache hashes and verification records are retained alongside saved metrics and p
 
 Both repository releases exclude restricted images, row-level metadata, private filesystem paths, predictions, embeddings, fitted models and representation arrays. Obtain restricted datasets independently under their applicable access terms. A private repository does not itself authorize disclosure, and removing photographs alone does not establish anonymity of derivatives. The code license does not grant rights to datasets. The TensorFlow Flowers workflow remains separate and retains its attribution and license information.
 
-## Approved V2 figure copies
+## Submitted figure copies
 
-The delivered figure PDFs are synchronized with the approved V2 submission
+The delivered figure PDFs are synchronized with the approved manuscript
 artifacts. The main-paper directory contains the seven assets for Figures 1–5;
 the four public Flowers assets used in appendix Figures 6–9 remain under
 `workflow_demo/tensorflow_flowers/figures/`. Numerical content was verified

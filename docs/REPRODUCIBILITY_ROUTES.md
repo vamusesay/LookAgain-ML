@@ -7,7 +7,7 @@ Source/wheel relationship: DOCUMENTED SCOPE DIFFERENCE.
 | Validated 1.0.0 wheel | Local wheel under `release_assets/` | General `analyze`, encoder/cache/QC APIs, typed configuration, repeated splits, uncertainty and specialized cross-fitted regression APIs |
 | Current integrated API | `python -m pip install .` | `nested_validation_selection` and inner-selected neural heads in addition to the general API |
 | Paper replication | Current source plus `replication/main_paper/analysis/` | Dataset-specific settings, nested selection, neural heads, adaptation and diagnostics |
-| Public Flowers workflow | Current source plus `workflow_demo/tensorflow_flowers/` | Current V2 sample, three-fold inner training OOF tuning/stacking, 12 repeated splits and 2,000 paired draws |
+| Public Flowers workflow | Current source plus `workflow_demo/tensorflow_flowers/` | Paper sample, three-fold inner training OOF tuning/stacking, 12 repeated splits and 2,000 paired draws |
 | Manuscript artifacts | Saved aggregates plus supplied generators | Tables, figures and scalar formatting without scientific model fitting |
 
 ## Method boundaries
@@ -28,11 +28,11 @@ selection procedure. Both routes exclude test outcomes from fitting and selectio
 
 Recorded wheel Flowers runs used ten encoders, native-dimensional heads
 (`head_max_components=None`), typed configurations, cache reuse, 12 splits and
-2,000 bootstrap draws. Current V2 Flowers uses three inner folds and a PCA cap
+2,000 bootstrap draws. The submitted Flowers analysis uses three inner folds and a PCA cap
 of 128. These distinct procedures have distinct references; historical results
 are retained only in private execution records.
 
-Current V2 primary analyses used the later nested source module. Current neural
+The paper’s primary analyses used the later nested source module. Current neural
 analyses used the later inner-selection/locked-refit module. Adaptation and some
 diagnostics use separate scripts. Other scripts aggregate saved outputs and
 create manuscript artifacts. A shared version string is not execution identity.
@@ -48,6 +48,9 @@ python replication/verify_checksums.py
 python workflow_demo/tensorflow_flowers/analysis/verify_reference_results.py
 python workflow_demo/tensorflow_flowers/analysis/generate_flowers_artifacts.py
 ```
+
+The checksum verifier hashes UTF-8 text with LF-normalized line endings and
+binary assets byte-for-byte, so Git checkouts on Windows and Unix agree.
 
 The generator reads saved `reference_results/`; it does not use newly fitted
 outputs automatically. Fresh Flowers results go to the notebook's `WORK/results`

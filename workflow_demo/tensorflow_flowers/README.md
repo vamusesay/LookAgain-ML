@@ -45,7 +45,7 @@ rerun the preparation cell on an already staged root.
 
 `work/flowers` stores public inputs and splits, `work/features` representations,
 `work/models` checkpoints and `work/results` new fitted outputs. These local
-directories are ignored by Git. `reference_results/` contains saved V2 aggregate
+directories are ignored by Git. `reference_results/` contains saved aggregate
 reference outputs, not outputs from the delivered notebook. `analysis/` retains
 the authoritative current script filenames; `figures/`, `tables/` and `scalars/`
 contain the approved saved presentation artifacts. Generators operate on saved

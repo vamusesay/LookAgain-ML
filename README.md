@@ -82,7 +82,7 @@ uncertainty and output controls.
 
 ## Paper replication and public workflow
 
-The wheel supplied verified package functionality in documented runs. Current V2
+The wheel supplied verified package functionality in documented runs. The paper’s
 nested-selection and neural-head analyses used later source modules. Separate
 scripts implement adaptation, diagnostics, aggregation and manuscript-artifact
 creation. Saved, hash-verified outputs support the reported results; the wheel
@@ -91,7 +91,7 @@ reproduction uses the supplied source and replication scripts.
 
 Start with the [TensorFlow Flowers Tutorial](workflow_demo/tensorflow_flowers/README.md).
 It is the current-API public demonstration and requires no restricted dataset.
-Its saved reference outputs describe the current V2 procedure. Historical
+Its saved reference outputs describe the procedure used in the submitted paper. Historical
 wheel-run references are not interchangeable with them.
 
 | Directory | Contents |
